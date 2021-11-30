@@ -1,0 +1,80 @@
+{
+    "name": "Kochbuch",
+    "short_name": "Kochbuch",
+    "description": "Eine Sammlung an leckeren Rezepten",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "scope": "/",
+    "background_color": "#F59794",
+    "theme_color": "#F59794",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+        "src": "/img/icons/icon_512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+        },
+        {
+        "src": "/img/icons/icon_192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+        },
+        {
+        "src": "/img/icons/icon_144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+        },
+        {
+        "src": "/img/icons/icon_96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+        },
+        {
+        "src": "/img/icons/icon_72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+        },
+        {
+        "src": "/img/icons/icon_48x48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+        },
+
+        {
+        "purpose": "maskable",
+        "src": "/img/icons/maskable_icon_512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+        },
+        {
+        "purpose": "maskable",
+        "src": "/img/icons/maskable_icon_192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+        },
+        {
+        "purpose": "maskable",    
+        "src": "/img/icons/maskable_icon_144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+        },
+        {
+        "purpose": "maskable",
+        "src": "/img/icons/maskable_icon_96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+        },
+        {
+        "purpose": "maskable",
+        "src": "/img/icons/maskable_icon_72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+        },
+        {
+        "purpose": "maskable",
+        "src": "/img/icons/maskable_icon_48x48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+        }
+    ]
+}

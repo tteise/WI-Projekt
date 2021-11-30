@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referenzen zu materialize, icons, css & js -->
+    <link href="/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script src="/js/materialize.min.js"></script>
+
+</head>
+<body class="grey lighten-5">
+
+  <!-- Navigationsleiste -->
+  <nav class="nav-bar z-depth-0">
+    <div class="nav-wrapper container">
+    <img src="img/logo.png" style="height: 95%"/>
+      <a href="index.html" class="brand-logo">Kochbuch</a>
+      <a href="#!" data-target="mobile-nav" class="sidenav-trigger" style="float: right"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="kontakt.html"><i class="material-icons left">mail</i>Kontakt</a></li>
+        <li><a href="ueber_uns.html"><i class="material-icons left">groups</i>Über uns</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-nav">
+    <li><a class="subheader">Kochbuch</a></li>
+    <li><a href="#"><i class="material-icons">home</i>Rezepte</a></li>
+    <li><a href="kontakt.html"><i class="material-icons">mail</i>Kontakt</a></li>
+    <li><a href="ueber_uns.html"><i class="material-icons">groups</i>Über uns</a></li>
+  </ul>
+
+  <!-- Inhalt -->
+  <div class="container grey-text">
+    <h5 class="center">Unsere Rezepte <3</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, porro voluptatum illum veniam eaque sunt sit labore provident eligendi! Voluptate amet suscipit inventore unde maxime atque impedit officia nobis laboriosam!</p>
+  </div>  
+
+  <!-- Rezept-Karten -->
+  <div class="rezepts container grey-text text-darken-1">
+    <div class="rezept-karte white row">
+        <img class="rezept-bild" src="/img/rezept.png" alt="rezept bild">
+    <div class= "rezept-beschreibung">
+        <div class="rezept-titel">Nudelauflauf</div>
+        <div class="rezept-zutaten">Nudeln, Schinken, Sahne, Käse</div>
+    </div>
+        <div class="rezept-löschen">
+          <i class="material-icons">delete_outline</i>
+      </div>
+      <ul class="rezept-zubereitung collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">segment</i>Rezept</div>
+          <div class="collapsible-body"></span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span></div>
+        </li>  
+      </ul>
+    </div>
+
+  <!-- Rezept hinzufügen -->
+  <!-- <ul class= "rezept-hinzufügen collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">add</i>Neues Rezept hinzufügen</div>
+      <div class="collapsible-body">
+        <form class="container section">
+          <div class="input-field">
+            <textarea placeholder="z.B. Tomatensuppe" id="titel" type="text" class="materialize-textarea"></textarea>
+            <label for="titel">Titel</label>
+          </div>
+          <div class="input-field">
+            <textarea placeholder="z.B. Parmesan, Reis, Hackfleisch" id="zutaten" type="text" class="materialize-textarea"></textarea>
+            <label for="zutaten">Zutaten</label>
+          </div>
+          <div class="input-field">
+            <textarea placeholder="Schritt für Schritt Anleitung" id="zubereitung" type="text" class="materialize-textarea"></textarea>
+            <label for="zubereitung">Zubereitung</label>
+          </div>
+          <div class="input-field center">
+            <button class="btn-small">Hinzufügen</button>
+          </div>
+        </form>
+      </div>
+      </div>
+    </li>  
+  </ul> -->
+
+<div class="container center">
+  <a id="installApp" class="btn-small"><i class="material-icons left">download_for_offline</i>Installieren</a>
+</div>
+
+<script src="/js/app.js"></script> 
+</body>
+</html>

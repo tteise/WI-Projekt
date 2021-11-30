@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referenzen zu materialize, icons, css & js -->
+    <link href="/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script src="/js/materialize.min.js"></script>
+
+</head>
+<body class="grey lighten-5">
+
+  <!-- Navigationsleiste -->
+
+  <nav class="nav-bar z-depth-0">
+    <div class="nav-wrapper container">
+    <img src="img/logo.png" style="height: 95%"/>
+    <a href="index.html" class="brand-logo">Kochbuch</a>
+    <a href="#!" data-target="mobile-nav" class="sidenav-trigger" style="float: right"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="index.html"><i class="material-icons left">home</i>Rezepte</a></li>
+        <li><a href="kontakt.html"><i class="material-icons left">mail</i>Kontakt</a></li>
+        <li><a href="ueber_uns.html"><i class="material-icons left">groups</i>Über uns</a></li>
+          </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="index.html"><i class="material-icons">home</i>Rezepte</a></li>
+    <li><a href="kontakt.html"><i class="material-icons">mail</i>Kontakt</a></li>
+    <li><a href="ueber_uns.html"><i class="material-icons">groups</i>Über uns</a></li>
+  </ul>
+
+    <!-- Inhalt -->
+    <div class="container grey-text center">
+        <h5>Du bist offline! :/</h5>
+        <p>Keine Panik, bis du wieder online bist kannst du dir unsere Rezepte sogar offline angucken.</p>
+        <a href="/index.html" class="btn-small">Zu den Rezepten</a>
+        <p class="help"><br>Schau nach ob du:
+          <br>
+          - denn Flugzeugmodus aktiviert hast
+          <br>
+          - mobile daten oder wifi eingeschaltet hast
+          <br>
+          - empfang hast wo du dich befindest
+        </p>    
+      </div>
+  
+<script src="/js/app.js"></script> 
+</body>
+</html>

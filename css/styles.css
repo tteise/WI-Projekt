@@ -1,0 +1,55 @@
+.brand-logo {
+    padding: 0px 10px !important; 
+}
+
+.rezept-karte {
+    border-radius: 6px;
+    box-shadow: 0px 1px 3px;    
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "bild beschreibung löschen"
+        "zubereitung zubereitung zubereitung";
+    position: relative;
+  }
+
+.rezept-bild {
+    grid-area: bild;
+    height: auto;
+    width: 100%;
+}
+
+.rezept-beschreibung {
+    grid-area: beschreibung;
+}
+
+.rezept-titel {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.rezept-löschen {
+    grid-area: löschen;
+    justify-self: end;
+}
+
+.rezept-zubereitung {
+    grid-area: zubereitung;
+    border-radius: 6px;
+}
+
+.rezept-hinzufügen {
+    border-radius: 6px;
+    box-shadow: 0px 1px 3px; 
+}
+
+.btn-small {
+    background-color: #ee6e73 !important;
+}
+
+.help {
+    text-align:left; 
+    display: inline-block;
+}
