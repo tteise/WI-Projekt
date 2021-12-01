@@ -49,7 +49,7 @@ self.addEventListener('fetch', function (event) {
                     return fetchResponse;
                 })
             });
-  <!-- Offline Seite -->
+  <!-- 'Offline Seite' -->
         }).catch(function(){
             if (event.request.mode === 'navigate') {
                 return caches.match('/offline.html');
