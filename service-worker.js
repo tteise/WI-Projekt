@@ -15,7 +15,7 @@ const cacheRessourcen = [
     'https://fonts.gstatic.com/s/materialicons/v114/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2',    
 ];
 
-  <!-- Pre-Caching -->
+  <!-- Pre-Caching -->  
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open(preCacheName).then(function(cache) {
