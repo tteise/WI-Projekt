@@ -7,13 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Collapsible.init(collapse);
 });
 
-
+// Service Worker registrierung
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/service-worker.js');
   });
 }
 
+// Installations-button und -befehl speichern
 const installApp = document.getElementById('installApp');
 installApp.style.display = 'none'
 let deferredPrompt;
@@ -23,11 +24,9 @@ window.addEventListener('beforeinstallprompt', (event) => {
       installApp.style.display = 'block';
 });
 
-
+// Installationsbefehl ausführen
 installApp.addEventListener('click', async () => {
-  // Show the prompt
   deferredPrompt.prompt();
-  // Wait for the user to respond to the prompt
   deferredPrompt.userChoice.then((choiceResult) => {
       if (choiceResult.outcome === 'accepted') {
         installApp.style.display = 'none';
