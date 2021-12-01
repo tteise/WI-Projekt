@@ -1,3 +1,4 @@
+  <!-- Caches -->
 const preCacheName = "pre_cache_v1";
 const dynamicCacheName = "dynamic_cache_v1";
 const cacheRessourcen = [
@@ -14,7 +15,7 @@ const cacheRessourcen = [
     'https://fonts.gstatic.com/s/materialicons/v114/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2',    
 ];
 
-
+  <!-- Pre-Caching -->
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open(preCacheName).then(function(cache) {
@@ -23,6 +24,7 @@ self.addEventListener('install', function(event) {
     );
 });
 
+  <!-- Löschen alter Caches -->
 self.addEventListener('activate', function(event) {
     event.waitUntil(
         caches.keys().then(function(cacheNames) {
@@ -37,6 +39,7 @@ self.addEventListener('activate', function(event) {
     );
 });
 
+  <!-- Offline First + Dynamisches Cachen -->
 self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request).then(function (response) {
@@ -46,6 +49,7 @@ self.addEventListener('fetch', function (event) {
                     return fetchResponse;
                 })
             });
+  <!-- Offline Seite -->
         }).catch(function(){
             if (event.request.mode === 'navigate') {
                 return caches.match('/offline.html');
